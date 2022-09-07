@@ -115,11 +115,11 @@ a {
 	text-decoration: none;
 }
 
-		a:hover {
-			border-bottom-color: transparent;
-			color: #fa89e5 !important;
-			text-decoration: none;
-		}
+	a:hover {
+		border-bottom-color: transparent;
+		color: #C3B1E1 !important;
+		text-decoration: none;
+	}
 
 	strong, b {
 		color: #787878;
@@ -2643,6 +2643,142 @@ a {
 			width: 6.25em;
 		}
 
+/* General Page Header*/
+#page-wrapper {
+	padding-top: 3em;
+}
+
+body.landing #page-wrapper {
+	padding-top: 0;
+}
+
+@-moz-keyframes reveal-header {
+	0% {
+		top: -5em;
+	}
+
+	100% {
+		top: 0;
+	}
+}
+
+@-webkit-keyframes reveal-header {
+	0% {
+		top: -5em;
+	}
+
+	100% {
+		top: 0;
+	}
+}
+
+@-ms-keyframes reveal-header {
+	0% {
+		top: -5em;
+	}
+
+	100% {
+		top: 0;
+	}
+}
+
+@keyframes reveal-header {
+	0% {
+		top: -5em;
+	}
+
+	100% {
+		top: 0;
+	}
+}
+
+#header_generic {
+	background: #444;
+	color: #bbb;
+	cursor: default;
+	height: 3.25em;
+	left: 0;
+	line-height: 3.25em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+}
+
+	#header_generic h1 {
+		color: inherit;
+		height: inherit;
+		left: 1.25em;
+		line-height: inherit;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 0;
+	}
+
+		#header_generic h1 a {
+			color: #fff;
+			font-weight: 400;
+			border: 0;
+		}
+
+	#header_generic nav {
+		height: inherit;
+		line-height: inherit;
+		position: absolute;
+		right: 0.75em;
+		top: 0;
+		vertical-align: middle;
+	}
+
+		#header_generic nav > ul {
+			list-style: none;
+			margin: 0;
+			padding-left: 0;
+		}
+
+			#header_generic nav > ul > li {
+				display: inline-block;
+				padding-left: 0;
+			}
+
+				#header_generic nav > ul > li > ul {
+					display: none;
+				}
+
+				#header_generic nav > ul > li a {
+					display: inline-block;
+					height: 2em;
+					line-height: 1.95em;
+					padding: 0 1em;
+					border-radius: 6px;
+				}
+
+					#header_generic nav > ul > li a:not(.button) {
+						color: #fff;
+						display: inline-block;
+						text-decoration: none;
+						border: 0;
+					}
+
+						#header_generic nav > ul > li a:not(.button).icon:before {
+							color: #999;
+							margin-right: 0.5em;
+						}
+
+				#header_generic nav > ul > li:first-child {
+					margin-left: 0;
+				}
+
+				#header_generic nav > ul > li.active a:not(.button) {
+					background-color: rgba(153, 153, 153, 0.25);
+				}
+
+				#header_generic nav > ul > li .button {
+					margin: 0 0 0 0.5em;
+					position: relative;
+				}
+
 /* Footer */
 
 	#footer .icons {
@@ -2699,6 +2835,33 @@ a {
 				margin-top: 0;
 				padding-top: 0;
 			}
+
+	#main_generic {
+		padding: 4em 0;
+	}
+
+		#main_generic > header {
+			text-align: center;
+			margin: 0 0 3em 0;
+		}
+
+			#main_generic > header h2 {
+				font-size: 2.75em;
+				margin: 0;
+			}
+
+			#main_generic > header p {
+				border-top: solid 2px #e5e5e5;
+				color: #777;
+				display: inline-block;
+				font-style: normal;
+				margin: 1em 0 0 0;
+				padding: 1em 0 1.25em 0;
+			}
+
+body.landing #main_generic {
+	margin-top: -14em;
+}
 
 /* Poptrox */
 
